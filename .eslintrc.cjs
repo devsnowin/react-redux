@@ -26,5 +26,6 @@ module.exports = {
     'import/prefer-default-export': 0,
     'react/function-component-definition': 0,
     'no-param-reassign': 0,
+    'react/no-unescaped-entities': 0,
   },
 };

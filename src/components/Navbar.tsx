@@ -1,19 +1,18 @@
-import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { RootState } from '../app/store';
+import { useAppSelector } from '../app/hooks';
 import Github from './icons/Github';
 import ShoppingBag from './icons/ShoppingBag';
 
 function Navbar() {
-  const { totalItems } = useSelector((state: RootState) => state.cart);
+  const { totalItems } = useAppSelector((state) => state.cart);
 
   return (
     <header className="py-6 flex justify-between items-center">
-      <h1 className="text-xl font-bold">
+      <h1 className="text-2xl font-bold">
         <Link to="/">React Store .</Link>
       </h1>
       <nav className="flex items-center gap-4">
-        <Link to="https://zipy.live/snowin/github" target="_blank">
+        <Link to="https://github.com/im-snowin/react-redux" target="_blank">
           <Github />
         </Link>
         <Link to="/cart" className="relative">

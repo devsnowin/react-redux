@@ -1,9 +1,9 @@
-import { useDispatch } from 'react-redux';
+import { useAppDispatch } from '../app/hooks';
 import { addProduct } from '../features/cart/cart.slice';
 
 const Product = (props: { product: Product }) => {
   const { product } = props;
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
 
   const addProductToCart = () => {
     dispatch(addProduct(product));
