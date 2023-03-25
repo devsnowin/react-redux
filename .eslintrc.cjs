@@ -25,5 +25,6 @@ module.exports = {
     'react/jsx-no-useless-fragment': 0,
     'import/prefer-default-export': 0,
     'react/function-component-definition': 0,
+    'no-param-reassign': 0,
   },
 };
